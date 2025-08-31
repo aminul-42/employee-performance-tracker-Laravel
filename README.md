@@ -1,61 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Employee Perfomance Tracker
+A Laravel-based application for managing employee details, attendance, and work logs. This system is designed for administrators to track employee presence, task progress, and generate reports, with a user-friendly dashboard for insights.
+# Features
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Employee Management:
 
-## About Laravel
+CRUD operations for employee details (name, email, role, status, profile picture, phone number, salary, join date).
+View employee list with pagination and status indicators.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Attendance Tracking:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Log daily attendance (check-in/out, status: Present, Absent, Late, Half-day).
+Calculate worked hours automatically.
+Filter attendance by employee and date range.
+Export attendance reports to Excel or PDF.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Work Logs:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Record tasks with descriptions, hours spent, and progress (Not Started, In Progress, Completed).
+Link work logs to attendance records (optional).
+Filter work logs by employee and date range.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+# Admin Dashboard:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Visualize employee details, overall work progress, and attendance metrics.
+Highlight the best employee (most worked hours/completed tasks) and least active employee (most absences).
+Display charts for attendance (total worked hours) and work log distribution (status breakdown).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Security:
 
-## Contributing
+Admin-only access to all features via admin.auth middleware.
+Authentication for admin login/logout.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Tech Stack
 
-## Security Vulnerabilities
+Backend: Laravel 11
+Frontend: Blade templates, Tailwind CSS, Chart.js
+Database: MySQL (configurable for other databases supported by Laravel)
+Dependencies:
+maatwebsite/excel for Excel exports
+barryvdh/laravel-dompdf for PDF exports
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+# Screenshots
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<picture>
+  <source srcset="screenshots/ss1.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+
+<picture>
+  <source srcset="screenshots/ss2.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+<picture>
+  <source srcset="screenshots/ss3.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+<picture>
+  <source srcset="screenshots/ss4.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+<picture>
+  <source srcset="screenshots/ss5.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+<picture>
+  <source srcset="screenshots/ss6.png" media="(min-width: 800px)">
+    <img src="path-to-your-image-fallback.jpg" alt="Fallback image">
+</picture>
+   
+
+
+
+For questions or support, contact aminulislamnur42@gmail.com or open an issue on GitHub.
